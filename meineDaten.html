@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boatly</title>
-
+    <script defer src="./build/bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="./build/bundle.css">
 
 </head>
@@ -15,21 +15,10 @@
         <header class="relative">
             <div class="container px-6 py-6 mx-auto lg:flex lg:items-center lg:justify-between">
                 <div class="flex items-center justify-between">
+
                     <a class="flex items-center -mx-1" href="#">
-                        <svg class="w-8 h-8 mx-1 sm:h-10 sm:w-10"
-                            src="https://www.schiffahrtsmuseum-nf.de/wp-content/uploads/2023/01/Schiffahrtsmuseum-logo.png">
+                        <img src="/assets/logo.svg">
 
-                        </svg>
-                        <div class="mx-1 text-white">
-                            <h3 class="uppercase tracking-[0.15em] font-medium">
-                                Boatly
-                            </h3>
-                            <p class="text-xs italic">Ready for sail?</p>
-                        </div>
-                    </a><button class="text-gray-600 lg:hidden">
-
-
-                    </button>
                 </div>
 
 
@@ -49,54 +38,24 @@
 
         <div class=" bg-slate-600 mx-auto max-w-2xl px-4 pt-36 sm:pt-60 lg:px-2 lg:pt-16">
 
-            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            <h1 class="text-4xl  tracking-tight text-white sm:text-6xl  text-center">
                 Segelkonfiguration</h1>
-
             <br>
+            <br>
+            <h2 class="text-4xl  tracking-tight text-white sm:text-2xl text-center">Starte damit das du deine
+                Segeleinstellungen konfigurierst.
+
+                <br>
+                <br>
 
 
-            <div>
-                <label for="Modell" class="block text-sm font-medium leading-6 text-white">Modell</label>
-                <div class="mt-2">
-                    <input type="modell" name="modell" id="modell"
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                        placeholder="Bavaria">
-                </div>
-
-                <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
---><br>
-                <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
                 <div>
-                    <label for="location" class="block text-sm font-medium leading-6 text-white">Segel:</label>
-                    <select id="location" name="location"
+                    <label for="location"
+                        class="block text-sm font-medium leading-6 text-white text-left">Segel:</label>
+                    <select id="location" name="location" placeholder="Passwort"
                         class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
                         <option>Großsegel</option>
-                        <option selected>Fock</option>
+                        <option>Fock</option>
                         <option>Code 0</option>
                         <option>Großsegel + Fock</option>
                         <option>Großsegel + Code 0</option>
@@ -105,19 +64,14 @@
                 </div>
 
                 <br>
-
-                <fieldset class="border-b border-t border-white">
-                    <legend class="sr-only">Notifications</legend>
+               
+                
+                    <legend class="sr-only">Anste</legend>
                     <div class="divide-y divide-gray-200">
                         <div class="relative flex items-start pb-4 pt-3.5">
                             <div class="min-w-0 flex-1 text-sm leading-6">
                                 <label for="comments" class="font-medium text-white">Ungerefft</label>
-                                <p id="comments-description" class="text-white">Ein ungerefftes Segel ist ein
-                                    Segel,
-                                    das nicht zusammengefaltet oder zusammengerollt wurde. Es ist das vollständig
-                                    ausgebreitete Segel auf dem Mast eines Segelboots. Ein ungerefftes Segel hat die
-                                    volle Größe und Form, die es für die optimale Nutzung der Windkraft benötigt.
-                                </p>
+
                             </div>
                             <div class="ml-3 flex h-6 items-center">
                                 <input id="comments" aria-describedby="comments-description" name="comments"
@@ -128,17 +82,7 @@
                         <div class="relative flex items-start pb-4 pt-3.5">
                             <div class="min-w-0 flex-1 text-sm leading-6">
                                 <label for="candidates" class="font-medium text-white">Reff 1</label>
-                                <p id="candidates-description" class="text-white">Das erste Reff bezieht sich auf
-                                    die
-                                    erste Faltung des Segels, die es kleiner macht und den Windwiderstand
-                                    verringert.
-                                    Dadurch kann das Segel bei stärkerem Wind oder ungünstigen Bedingungen
-                                    effektiver
-                                    genutzt werden. Ein Segel mit einem Reff 1 ist also kleiner als das ungereffte
-                                    Segel
-                                    und bietet dem Segler mehr Kontrolle über das Boot bei anspruchsvollen
-                                    Bedingungen.
-                                </p>
+                                
                             </div>
                             <div class="ml-3 flex h-6 items-center">
                                 <input id="candidates" aria-describedby="candidates-description" name="candidates"
@@ -149,12 +93,7 @@
                         <div class="relative flex items-start pb-4 pt-3.5">
                             <div class="min-w-0 flex-1 text-sm leading-6">
                                 <label for="offers" class="font-medium text-white">Reff 2</label>
-                                <p id="offers-description" class="text-white">Wenn das erste Reff nicht
-                                    ausreichend
-                                    ist, um das Segel an stärkere Winde oder anspruchsvollere Bedingungen
-                                    anzupassen,
-                                    kann das Segel mit dem zweiten Reff weiter verkleinert werden.
-                                </p>
+                                
                             </div>
                             <div class="ml-3 flex h-6 items-center">
                                 <input id="offers" aria-describedby="offers-description" name="offers" type="checkbox"
@@ -171,45 +110,47 @@
                 <p id="offers-description" class="text-white">Baum (Horizontal):</p>
                 <select id="location" name="location"
                     class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    <option>Großsegel</option>
-                    <option selected>Fock</option>
-                    <option>Code 0</option>
-                    <option>Großsegel + Fock</option>
-                    <option>Großsegel + Code 0</option>
-                    <option>Großsegel + Fock + Code 0</option>
+                    <option>-5</option>
+                    <option selected>0</option>
+                    <option>5</option>
+                    <option>15</option>
+                    <option>30</option>
+                    <option>45</option>
                 </select>
                 <br>
                 <p id="offers-description" class="text-white">Baum(vertikal):</p>
                 <select id="location" name="location"
                     class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    <option>Großsegel</option>
-                    <option selected>Fock</option>
-                    <option>Code 0</option>
-                    <option>Großsegel + Fock</option>
-                    <option>Großsegel + Code 0</option>
-                    <option>Großsegel + Fock + Code 0</option>
+                    <option>-5</option>
+                    <option selected>0</option>
+                    <option>5</option>
+                    <option>15</option>
+                    <option>30</option>
+                    <option>45</option>
                 </select>
                 <br>
                 <p id="offers-description" class="text-white">Achterstag Spannung:</p>
                 <select id="location" name="location"
                     class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    <option>Großsegel</option>
-                    <option selected>Fock</option>
-                    <option>Code 0</option>
-                    <option>Großsegel + Fock</option>
-                    <option>Großsegel + Code 0</option>
-                    <option>Großsegel + Fock + Code 0</option>
+                    <option>0</option>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                    <option>30</option>
                 </select>
                 <br>
                 <p id="offers-description" class="text-white">Achterliek Spannung:</p>
                 <select id="location" name="location"
                     class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    <option>Großsegel</option>
-                    <option selected>Fock</option>
-                    <option>Code 0</option>
-                    <option>Großsegel + Fock</option>
-                    <option>Großsegel + Code 0</option>
-                    <option>Großsegel + Fock + Code 0</option>
+                    <option>0</option>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                    <option>30</option>
                 </select>
                 <br>
                 <h2 class="text-4xl font-bold tracking-tight text-white sm:text-2xl">Einstellungen Fock
@@ -218,12 +159,15 @@
                 <p id="offers-description" class="text-white">Vorschott Distanz</p>
                 <select id="location" name="location"
                     class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    <option>Großsegel</option>
-                    <option selected>Fock</option>
-                    <option>Code 0</option>
-                    <option>Großsegel + Fock</option>
-                    <option>Großsegel + Code 0</option>
-                    <option>Großsegel + Fock + Code 0</option>
+                    <option>0</option>
+                    <option >10</option>
+                    <option>25</option>
+                    <option>50</option>
+                    <option>75</option>
+                    <option>1m</option>
+                    <option>2m</option>
+                    <option>3m</option>
+                    <option>5m</option>
                 </select>
                 <br>
                 <h2 class="text-4xl font-bold tracking-tight text-white sm:text-2xl">Einstellungen Code 0
@@ -233,28 +177,42 @@
                 <br>
                 <select id="location" name="location"
                     class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    <option>Großsegel</option>
-                    <option selected>Fock</option>
-                    <option>Code 0</option>
-                    <option>Großsegel + Fock</option>
-                    <option>Großsegel + Code 0</option>
-                    <option>Großsegel + Fock + Code 0</option>
+                    <option>0</option>
+                    <option >10</option>
+                    <option>25</option>
+                    <option>50</option>
+                    <option>75</option>
+                    <option>1m</option>
+                    <option>2m</option>
+                    <option>3m</option>
+                    <option>5m</option>
                 </select>
                 <br>
                 <br>
+                <div class="text-white">
+                    <p id="startTime">Startzeit: -</p>
+                    <p id="endTime">Endzeit: -</p>
+                    <p id="duration">Dauer: -</p>
+                  </div>
+                  <br>
                 <span class="isolate inline-flex rounded-md shadow-sm">
-                    <button type="button"
-                        class="relative inline-flex items-center rounded-l-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">Fahrt
+
+                    
+                    <button type="button" id="startButton"
+                        class="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">Fahrt
                         starten</button>
-                    <button type="button"
-                        class="relative -ml-px inline-flex items-center rounded-r-md bg-green-400 px-3 py-2 text-sm font-semibold text-white ring-1 ring-inset ring-gray-300 hover:bg-green-500 focus:z-10">Fahrt
+
+                    <button type="button" id="endButton"
+                        class="relative -ml-px inline-flex items-center rounded-md bg-green-400 px-3 py-2 text-sm font-semibold text-white ring-1 ring-inset ring-gray-300 hover:bg-green-500 focus:z-10">Fahrt
                         beenden</button>
 
                 </span>
-            </div>
         </div>
+    </div>
 
-        <br>
+
+
+    <br>
     </div>
 
 
@@ -263,7 +221,7 @@
     <img src="/assets/Vectors.svg" alt="wellen" position=absolute width="1734px" height="146p" left="0px" top=" 1370px"
         background="rgba(229, 229, 229, 0.13)">
     <p class="w-full py-6 mx-auto text-white text-center bg-600">
-        © 2023 Julia Peters,Celine Haupenthal,Marie Bleikert,Nele Ries, Maurice Trunk
+       © 2023 Julia Peters,vCeline Haupenthal, Marie Bleikert, Nele Ries, Maurice Trunk
     </p>
     </footer>
 

@@ -8,7 +8,8 @@
     "build": "rollup -c",
     "watch": "rollup -cw",
     "serve": "live-server --port=3000",
-    "tailwind-watch": "npx tailwindcss -i ./src/index.css -o ./build/bundle.css --watch"
+    "tailwind-watch": "npx tailwindcss -i ./src/index.css -o ./build/bundle.css --watch",
+    "tailwind": "npx tailwindcss -i ./src/index.css -o ./build/bundle.css"
   },
   "author": "",
   "license": "ISC",
